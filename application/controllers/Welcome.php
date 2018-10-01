@@ -22,4 +22,12 @@ class Welcome extends CI_Controller {
 	{
 		$this->load->view('welcome_message');
 	}
+
+    public function go()
+    {
+        $data['content'] = 'csv_learn';
+        //$data['title'] = 999;
+
+        $this->load->view('master',$data);
+	}
 }
