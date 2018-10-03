@@ -31,8 +31,16 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <script src="public/js/jquery-3.3.1.js"></script>
 <script src="public/js/bootstrap.js"></script>
 <script>
+    //https://stackoverflow.com/questions/22207377/disable-click-outside-of-bootstrap-modal-area-to-close-modal
+    // screen clock
     $(function () {
+        $('#delete-confirm').on('show.bs.modal', function(e) {
+            $(this).find('.btn-delete-yes').attr('href', $(e.relatedTarget).data('href'));
+        });
 
+        $('#confirm-edit').on('show.bs.modal', function(e) {
+            $(this).find('.btn-update-yes').attr('href', $(e.relatedTarget).data('href'));
+        });
 
     });
 

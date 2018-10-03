@@ -5,7 +5,7 @@ class Crud extends CI_Controller {
 
 	public function index()
 	{
-        $data['title'] = 'Csv@easy';
+        $data['title'] = 'Crud@easy';
         $data['content'] = 'crud';
         $this->load->view('master',$data);
 	}

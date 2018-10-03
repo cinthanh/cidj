@@ -22,8 +22,8 @@
                     <td>pppp</td>
                     <td>qqqqq</td>
                     <td>
-                        <a class="btn btn-warning" href="#" role="button" data-backdrop="static" data-keyboard="false" data-toggle="modal" data-target="#edit-confirm">Edit</a>
-                        <a class="btn btn-danger" href="#" role="button" id="delete" data-toggle="modal" data-target="#delete-confirm">Delete</a>
+                        <a data-target="#edit-confirm" data-href="/edit.php?id=23" class="btn btn-warning" href="#" role="button" data-backdrop="static" data-keyboard="false" data-toggle="modal">Edit</a>
+                        <a data-target="#delete-confirm"  data-href="/delete.php?id=23" class="btn btn-danger" href="#" role="button" id="delete" data-toggle="modal">Delete</a>
                     </td>
                 </tr>
 
@@ -61,7 +61,7 @@
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary" data>Send message</button>
+                <button type="button" class="btn btn-primary btn-update-yes">Update me</button>
             </div>
         </div>
     </div>
@@ -85,7 +85,7 @@
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-danger btn-outline-danger">Delete</button>
+                <button type="button" class="btn btn-danger btn-outline-danger btn-delete-yes">Delete</button>
             </div>
         </div>
     </div>
