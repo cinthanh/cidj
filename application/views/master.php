@@ -35,11 +35,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     // screen clock
     $(function () {
         $('#delete-confirm').on('show.bs.modal', function(e) {
-            $(this).find('.btn-delete-yes').attr('href', $(e.relatedTarget).data('href'));
+            $(this).find('a.btn-delete-yes').attr('href', $(e.relatedTarget).data('href'));
         });
 
-        $('#confirm-edit').on('show.bs.modal', function(e) {
-            $(this).find('.btn-update-yes').attr('href', $(e.relatedTarget).data('href'));
+        $('#edit-confirm').on('show.bs.modal', function(e) {
+            $(this).find('a.btn-update-yes').attr('href', $(e.relatedTarget).data('href'));
         });
 
     });

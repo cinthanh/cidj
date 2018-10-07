@@ -22,8 +22,9 @@
                     <td>pppp</td>
                     <td>qqqqq</td>
                     <td>
-                        <a data-target="#edit-confirm" data-href="/edit.php?id=23" class="btn btn-warning" href="#" role="button" data-backdrop="static" data-keyboard="false" data-toggle="modal">Edit</a>
-                        <a data-target="#delete-confirm"  data-href="/delete.php?id=23" class="btn btn-danger" href="#" role="button" id="delete" data-toggle="modal">Delete</a>
+                        <a class="btn btn-dark" href="phps.php" target="_blank">Test</a><!--data-href=data-from-mysql-->
+                        <a data-target="#edit-confirm" data-href="/edit.php?id=23" class="btn btn-warning" href="#" data-backdrop="static" data-keyboard="false" data-toggle="modal">Edit</a>
+                        <a data-target="#delete-confirm"  data-href="/delete.php?id=23" class="btn btn-danger" href="#" data-toggle="modal">Delete</a>
                     </td>
                 </tr>
 
@@ -61,15 +62,14 @@
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary btn-update-yes">Update me</button>
+                <a class="btn btn-primary btn-update-yes">Update me</a>
             </div>
         </div>
     </div>
 </div>
 
+
 <!--Delete Modal-->
-
-
 <!-- Modal -->
 <div class="modal fade" id="delete-confirm" tabindex="-1" role="dialog" aria-labelledby="delete-confirm" aria-hidden="true">
     <div class="modal-dialog" role="document">
@@ -85,7 +85,7 @@
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-danger btn-outline-danger btn-delete-yes">Delete</button>
+                <a id="btn-delete-yes" class="btn btn-danger btn-outline-danger btn-delete-yes">Delete</a>
             </div>
         </div>
     </div>
